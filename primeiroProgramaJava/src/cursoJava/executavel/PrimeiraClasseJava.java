@@ -5,20 +5,21 @@ public class PrimeiraClasseJava {
 	/* Main é um método auto executavel em Java*/
 	public static void main(String[] args) {
 		
-		/* String no Java sempre será um texto de tamanho qualquer */
-		String nome = "André Gattermeyer";
-		String cpf = "326.702.208-86";
-		String telefone = "998726874";
-		String endereco = "Londrina -PR";
-		int idade = 38;
 		
-		/*
-		System.out.println("Meu nome é " + nome + " e o meu CPF é " + cpf + " e eu moro em "
-		+ endereco + " meu telefone é " + telefone + "minha idade é " + idade + "anos" );*/
+	int maiorIdade = 18;
+	
+	int idosoIdade = 60;
+	
+	int jovemIdade = 16;
+	
+	int criancaIdade = 7;
+	
+	String cpf = "132.987.659.05";
+	
+	System.out.println("Maior idade é = " + maiorIdade);
+	System.out.println("Idoso idade é = " + idosoIdade);
+	System.out.println("Jovem idade é = " + jovemIdade);
+	System.out.println("Criança idade é = " + criancaIdade);
 		
-		String saida = "Meu nome é " + nome + " e o meu CPF é " + cpf 
-				+ " e eu moro em "
-				+ endereco + " meu telefone é " + telefone + " e minha idade é " + idade + "anos" ;
-		System.out.println(saida);
 	}
 }
