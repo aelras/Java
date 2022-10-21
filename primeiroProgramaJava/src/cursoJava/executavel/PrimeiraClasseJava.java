@@ -2,24 +2,23 @@ package cursoJava.executavel;
 
 public class PrimeiraClasseJava {
 	
+	/* Variável global é acessivel a todos*/
+	static int maiorIdadeGlobal = 30;
+	
 	/* Main é um método auto executavel em Java*/
 	public static void main(String[] args) {
 		
-		
+		/* Variável local porque pertence somente a esse método*/
 	int maiorIdade = 18;
+	System.out.println("Valor variável local =" +maiorIdade);
 	
-	int idosoIdade = 60;
-	
-	int jovemIdade = 16;
-	
-	int criancaIdade = 7;
-	
-	String cpf = "132.987.659.05";
-	
-	System.out.println("Maior idade é = " + maiorIdade);
-	System.out.println("Idoso idade é = " + idosoIdade);
-	System.out.println("Jovem idade é = " + jovemIdade);
-	System.out.println("Criança idade é = " + criancaIdade);
-		
+	metodo2();
 	}
+	
+	public static void metodo2 () {
+		System.out.println("Valor da variável global = " + maiorIdadeGlobal);
+	}
+	
 }
+	
+		
