@@ -4,17 +4,14 @@ public class PrimeiraClasseJava {
 	
 	public static void main(String[] args) {
 		
-		/* CHAR representa uma letra*/
-		char pessoaFeminino = 'F';
+		/*String no Java sempre será um texto de tamanho qualquer*/
+		String nome;
+		String cpf;
+		String telefone;
+		String endereco;
 		
-		if(pessoaFeminino == 'F') {
-			System.out.println("Feminino");
-		}else {
-			System.out.println("masculino");
-		}
+	
 	}
-	
-	
 }
 	
 
