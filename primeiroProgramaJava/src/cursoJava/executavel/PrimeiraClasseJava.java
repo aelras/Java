@@ -5,7 +5,7 @@ public class PrimeiraClasseJava {
 	public static void main(String[] args) {
 
 		/* SWITCH CASE: OPERAÇÕES EXATAS*/
-		int dia = 4;
+		int dia = 2;
 		switch (dia) {
 		case 1: 
 			System.out.println("domingo");
