@@ -4,23 +4,13 @@ public class PrimeiraClasseJava {
 
 	public static void main(String[] args) {
 
-		/*Estrutura de repetição WHILE*/
+		/*Estrutura de repetição FOR*/
 		
-		int numero = 0;
-		
-		while(numero <= 60) { /*Verifica e depois executa o código*/
-			
-			System.out.println("O número atual é : " + numero);
-			numero ++; // acrecenta um número a cada iteração
+		for (int numero = 10; numero >= 0; numero --) {
+			System.out.println("Número atual é : " + numero);
 		}
-		/*--------------------*/
 		
-		int numero2 = 0;
-		do { /*Primeiro executa e depois verifica*/
-			
-			System.out.println("O número atual é : " + numero2);
-			numero2 ++;
-		}while(numero2 <= 60);
+		
 	}
 
 }
