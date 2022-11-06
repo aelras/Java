@@ -1,36 +1,24 @@
 package cursoJava.executavel;
 
-import javax.swing.JOptionPane;
+import cursoJava.classes.Aluno;
 
 public class PrimeiraClasseJava {
 
 	
+	/* Main é um método auto executavel em Java*/
 	public static void main(String[] args) {
 
 		
-		String carros = JOptionPane.showInputDialog("Informe a quantidade de carros: ");
-		String pessoas = JOptionPane.showInputDialog("Informe a quantidade de pessoas: ");
+		Aluno aluno1 = new Aluno(); /* Aqui será o João*/
 		
-		double carroNumero = Double.parseDouble(carros);
-		double pessoaNumero = Double.parseDouble(pessoas);
+		Aluno aluno2 = new Aluno(); /*Aqui será o Pedro*/ 
 		
-		int divisao = (int)(carroNumero / pessoaNumero);
+		Aluno aluno3 = new Aluno(); /*Aqui será o André*/
 		
-		double resto = carroNumero % pessoaNumero;
+		Aluno aluno4 = new Aluno("Maria");
 		
-		int resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o resultado da divisão? ");
-		
-		if (resposta == 0) {
-			JOptionPane.showMessageDialog(null, "Divisão para pessoas deu: " + divisao);
-		}
-		
-		resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o RESTO da divisão? ");
-		
-		if (resposta == 0) {
-			JOptionPane.showMessageDialog(null, "O resto da divisão é: " + resto);
-		}else {
-			System.out.println("Não quis ver o resultado");;
-		}
+		Aluno  aluno5 = new Aluno("José", 50);
+	
 	}
 
 }
