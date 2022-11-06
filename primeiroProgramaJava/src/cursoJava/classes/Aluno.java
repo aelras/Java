@@ -4,16 +4,16 @@ package cursoJava.classes;
 public class Aluno {
 
 	/* Esses são os atributos do Aluno*/
-	String nome;
-	int idade;
-	String dataNascimento;
-	String registroGeral;
-	String numeroCpf;
-	String nomeMae;
-	String nomePai;
-	String dataMatricula;
-	String nomeEscola;
-	String serieMatriculado;
+	public String nome;
+	public int idade;
+	public String dataNascimento;
+	public String registroGeral;
+	public String numeroCpf;
+	public String nomeMae;
+	public String nomePai;
+	public String dataMatricula;
+	public String nomeEscola;
+	public String serieMatriculado;
 	
 	public Aluno() { /* Cria os dados na memória - Sendo padrão do Java*/
 		
