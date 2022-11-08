@@ -32,7 +32,8 @@ public class PrimeiraClasseJava {
 		System.out.println("Data de nascimento do aluno 1 é : " + aluno1.getDataNascimento());
 		System.out.println("RG do aluno 1 é : " + aluno1.getRegistroGeral());
 		System.out.println("média da nota é = " + aluno1.getMediaNota());
-		
+		System.out.println("Resultado = " +( aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+		System.out.println("Resultado 2 = " + aluno1.getAlunoAprovado2());
 		
 		System.out.println("=============================================");
 		
@@ -56,13 +57,9 @@ public class PrimeiraClasseJava {
 		System.out.println("Idade do aluno 2 é : " + aluno2.getIdade());
 		System.out.println("data de nascimento do aluno 2 é : " + aluno2.getDataNascimento());
 		System.out.println("RG do aluno 2 é : " + aluno2.getRegistroGeral());
-		System.out.println("CPF do aluno 2 é : " + aluno2.getNumeroCpf());
-		System.out.println("Nome da mãe  do aluno 2 é : " + aluno2.getNomeMae());
-		System.out.println("Nome do pai do aluno 2 é : " + aluno2.getNomePai());
-		System.out.println("Data da matrícula do aluno 2 é : " + aluno2.getDataMatricula());
-		System.out.println("Série do aluno 2 é : " + aluno2.getSerieMatriculado() + " série");
-		System.out.println("Nome da escola é : " + aluno2.getNomeEscola());
 		System.out.println("média da nota é = " + aluno2.getMediaNota());
+		System.out.println("Resultado = " +( aluno2.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+		System.out.println("Resultado 2 = " + aluno2.getAlunoAprovado2());
 		
 		
 		
@@ -90,13 +87,9 @@ public class PrimeiraClasseJava {
 		System.out.println("Idade do aluno 3 é : " + aluno3.getIdade());
 		System.out.println("data de nascimento do aluno 3 é : " + aluno3.getDataNascimento());
 		System.out.println("RG do aluno 3 é : " + aluno3.getRegistroGeral());
-		System.out.println("CPF do aluno 3 é : " + aluno3.getNumeroCpf());
-		System.out.println("Nome da mãe  do aluno 3 é : " + aluno3.getNomeMae());
-		System.out.println("Nome do pai do aluno 3 é : " + aluno3.getNomePai());
-		System.out.println("Data da matrícula do aluno 3 é : " + aluno3.getDataMatricula());
-		System.out.println("Série do aluno 3 é : " + aluno3.getSerieMatriculado() + " série");
-		System.out.println("Nome da escola é : " + aluno3.getNomeEscola());
 		System.out.println("média da nota é = " + aluno3.getMediaNota());
+		System.out.println("Resultado = " +( aluno3.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+		System.out.println("Resultado 2 = " +aluno3.getAlunoAprovado2() );
 		
 	
 	
