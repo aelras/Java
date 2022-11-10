@@ -30,9 +30,9 @@ public class PrimeiraClasseJava {
 		String nota4 = JOptionPane.showInputDialog("Nota 4");
 		
 		
-		Aluno aluno1 = new Aluno(); /* Aqui será o João*/
+		Aluno aluno1 = new Aluno(); 
 		aluno1.setNome(nome);
-		aluno1.setIdade(Integer.valueOf(idade)); /* Converte para inteiro*/
+		aluno1.setIdade(Integer.valueOf(idade)); 
 		aluno1.setDataNascimento(dataNascimento);
 		aluno1.setRegistroGeral(RegistroGeral);
 		aluno1.setNumeroCpf(Cpf);
@@ -55,6 +55,10 @@ public class PrimeiraClasseJava {
 		System.out.println("Resultado 2 = " + aluno1.getAlunoAprovado2());
 		
 
+		System.out.println(aluno1.toString()); /*Descrição do objeto na memoria*/
+		System.out.println("Média do aluno = "  + aluno1.getMediaNota());
+		System.out.println("resultado =  " + aluno1.getAlunoAprovado2());
+		
 		
 	}
 
