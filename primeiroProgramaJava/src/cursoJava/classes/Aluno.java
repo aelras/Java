@@ -1,5 +1,7 @@
 package cursoJava.classes;
 
+import java.util.Objects;
+
 /*Esta é nossa classe/objeto que representa o Aluno*/
 public class Aluno {
 
@@ -177,6 +179,58 @@ public class Aluno {
 		}
 	}
 
+	@Override
+	public String toString() {
+		return "Aluno [nome=" + getNome() + ", idade=" + getIdade() + ", dataNascimento=" + dataNascimento + ", registroGeral="
+				+ registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai
+				+ ", dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado="
+				+ serieMatriculado + ", nota1=" + nota1 + ", nota2=" + nota2 + ", nota3=" + nota3 + ", nota4=" + nota4
+				+ ", getNota1()=" + getNota1() + ", getNota2()=" + getNota2() + ", getNota3()=" + getNota3()
+				+ ", getNota4()=" + getNota4() + ", getNome()=" + getNome() + ", getIdade()=" + getIdade()
+				+ ", getDataNascimento()=" + getDataNascimento() + ", getRegistroGeral()=" + getRegistroGeral()
+				+ ", getNumeroCpf()=" + getNumeroCpf() + ", getNomeMae()=" + getNomeMae() + ", getNomePai()="
+				+ getNomePai() + ", getDataMatricula()=" + getDataMatricula() + ", getNomeEscola()=" + getNomeEscola()
+				+ ", getSerieMatriculado()=" + getSerieMatriculado() + ", getMediaNota()=" + getMediaNota()
+				+ ", getAlunoAprovado()=" + getAlunoAprovado() + ", getAlunoAprovado2()=" + getAlunoAprovado2()
+				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
+				+ "]";
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
+		result = prime * result + ((numeroCpf == null) ? 0 : numeroCpf.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Aluno other = (Aluno) obj;
+		if (nome == null) {
+			if (other.nome != null)
+				return false;
+		} else if (!nome.equals(other.nome))
+			return false;
+		if (numeroCpf == null) {
+			if (other.numeroCpf != null)
+				return false;
+		} else if (!numeroCpf.equals(other.numeroCpf))
+			return false;
+		return true;
+	}
+
+	
+
+
+					
 }
 	
 	
