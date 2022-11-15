@@ -18,11 +18,48 @@ public class Aluno {
 	private String serieMatriculado;
 	
 	private double nota1;
+	private String disciplina1;
 	private double nota2;
+	private String disciplina2;
 	private double nota3;
+	private String disciplina3;
 	private double nota4;
+	private String disciplina4;
 	
 	
+	
+	public String getDisciplina1() {
+		return disciplina1;
+	}
+
+	public void setDisciplina1(String disciplina1) {
+		this.disciplina1 = disciplina1;
+	}
+
+	public String getDisciplina2() {
+		return disciplina2;
+	}
+
+	public void setDisciplina2(String disciplina2) {
+		this.disciplina2 = disciplina2;
+	}
+
+	public String getDisciplina3() {
+		return disciplina3;
+	}
+
+	public void setDisciplina3(String disciplina3) {
+		this.disciplina3 = disciplina3;
+	}
+
+	public String getDisciplina4() {
+		return disciplina4;
+	}
+
+	public void setDisciplina4(String disciplina4) {
+		this.disciplina4 = disciplina4;
+	}
+
 	public double getNota1() {
 		return nota1;
 	}
@@ -179,21 +216,26 @@ public class Aluno {
 		}
 	}
 
+
+
 	@Override
 	public String toString() {
-		return "Aluno [nome=" + getNome() + ", idade=" + getIdade() + ", dataNascimento=" + dataNascimento + ", registroGeral="
+		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
 				+ registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai
 				+ ", dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado="
-				+ serieMatriculado + ", nota1=" + nota1 + ", nota2=" + nota2 + ", nota3=" + nota3 + ", nota4=" + nota4
-				+ ", getNota1()=" + getNota1() + ", getNota2()=" + getNota2() + ", getNota3()=" + getNota3()
-				+ ", getNota4()=" + getNota4() + ", getNome()=" + getNome() + ", getIdade()=" + getIdade()
-				+ ", getDataNascimento()=" + getDataNascimento() + ", getRegistroGeral()=" + getRegistroGeral()
-				+ ", getNumeroCpf()=" + getNumeroCpf() + ", getNomeMae()=" + getNomeMae() + ", getNomePai()="
-				+ getNomePai() + ", getDataMatricula()=" + getDataMatricula() + ", getNomeEscola()=" + getNomeEscola()
-				+ ", getSerieMatriculado()=" + getSerieMatriculado() + ", getMediaNota()=" + getMediaNota()
-				+ ", getAlunoAprovado()=" + getAlunoAprovado() + ", getAlunoAprovado2()=" + getAlunoAprovado2()
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
-				+ "]";
+				+ serieMatriculado + ", nota1=" + nota1 + ", disciplina1=" + disciplina1 + ", nota2=" + nota2
+				+ ", disciplina2=" + disciplina2 + ", nota3=" + nota3 + ", disciplina3=" + disciplina3 + ", nota4="
+				+ nota4 + ", disciplina4=" + disciplina4 + ", getDisciplina1()=" + getDisciplina1()
+				+ ", getDisciplina2()=" + getDisciplina2() + ", getDisciplina3()=" + getDisciplina3()
+				+ ", getDisciplina4()=" + getDisciplina4() + ", getNota1()=" + getNota1() + ", getNota2()=" + getNota2()
+				+ ", getNota3()=" + getNota3() + ", getNota4()=" + getNota4() + ", getNome()=" + getNome()
+				+ ", getIdade()=" + getIdade() + ", getDataNascimento()=" + getDataNascimento()
+				+ ", getRegistroGeral()=" + getRegistroGeral() + ", getNumeroCpf()=" + getNumeroCpf()
+				+ ", getNomeMae()=" + getNomeMae() + ", getNomePai()=" + getNomePai() + ", getDataMatricula()="
+				+ getDataMatricula() + ", getNomeEscola()=" + getNomeEscola() + ", getSerieMatriculado()="
+				+ getSerieMatriculado() + ", getMediaNota()=" + getMediaNota() + ", getAlunoAprovado()="
+				+ getAlunoAprovado() + ", getAlunoAprovado2()=" + getAlunoAprovado2() + ", hashCode()=" + hashCode()
+				+ ", getClass()=" + getClass() + ", toString()=" + super.toString() + "]";
 	}
 
 	@Override
@@ -226,6 +268,8 @@ public class Aluno {
 			return false;
 		return true;
 	}
+
+
 
 	
 
