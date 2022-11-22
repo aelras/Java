@@ -3,6 +3,7 @@ package cursoJava.executavel;
 import javax.swing.JOptionPane;
 
 import cursoJava.classes.Aluno;
+import cursoJava.classes.Disciplina;
 
 public class PrimeiraClasseJava {
 
@@ -25,17 +26,7 @@ public class PrimeiraClasseJava {
 		String SerieMatriculado = JOptionPane.showInputDialog("Qual é a série do aluno? ");
 		String NomeEscola = JOptionPane.showInputDialog("Qual é o nome da escola do aluno ?");
 		
-		String disciplina1 = JOptionPane.showInputDialog("Disciplina 1 ?");
-		String nota1 = JOptionPane.showInputDialog("Nota 1");
-		
-		String disciplina2 = JOptionPane.showInputDialog("Disciplina 2 ?");
-		String nota2 = JOptionPane.showInputDialog("Nota 2");
-		
-		String disciplina3 = JOptionPane.showInputDialog("Disciplina 3 ?");
-		String nota3 = JOptionPane.showInputDialog("Nota 3");
-		
-		String disciplina4 = JOptionPane.showInputDialog("Disciplina 4");
-		String nota4 = JOptionPane.showInputDialog("Nota 4");
+	
 		
 		
 		Aluno aluno1 = new Aluno();		
@@ -51,7 +42,32 @@ public class PrimeiraClasseJava {
 		aluno1.setSerieMatriculado(SerieMatriculado);
 		aluno1.setNomeEscola(NomeEscola);
 		
+		Disciplina disciplina1 = new Disciplina();
+		disciplina1.setDisciplina("Banco de dados");
+		disciplina1.setNota(90);
 		
+		aluno1.getDisciplinas().add(disciplina1);
+		
+		Disciplina disciplina2 = new Disciplina();
+		disciplina2.setDisciplina("Matemática");
+		disciplina2.setNota(85);
+		
+		aluno1.getDisciplinas().add(disciplina2);
+		
+		Disciplina disciplina3 = new Disciplina();
+		disciplina3.setDisciplina("Geografia");
+		disciplina3.setNota(97);
+		
+		aluno1.getDisciplinas().add(disciplina3);
+		
+		Disciplina disciplina4 = new Disciplina();
+		disciplina4.setDisciplina("Português");
+		disciplina4.setNota(85);
+		
+		aluno1.getDisciplinas().add(disciplina1);
+		aluno1.getDisciplinas().add(disciplina2);
+		aluno1.getDisciplinas().add(disciplina3);
+		aluno1.getDisciplinas().add(disciplina4);
 				
 		System.out.println("Nome do aluno 1 é : " + aluno1.getNome());
 		System.out.println("Idade do aluno 1 é : " + aluno1.getIdade());
@@ -67,9 +83,9 @@ public class PrimeiraClasseJava {
 		System.out.println("resultado =  " + aluno1.getAlunoAprovado2());
 		
 		
-
-		
-		
 	}
-
+	
 }
+
+		
+		
