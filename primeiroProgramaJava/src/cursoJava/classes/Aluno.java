@@ -1,6 +1,7 @@
 package cursoJava.classes;
 
-
+import java.util.ArrayList;
+import java.util.List;
 
 /*Esta é nossa classe/objeto que representa o Aluno*/
 public class Aluno {
@@ -18,16 +19,15 @@ public class Aluno {
 	private String serieMatriculado;
 	
 	
-	private Disciplina disciplina = new Disciplina();
+	private List<Disciplina> disciplinas = new ArrayList<>();
 	
-	public void setDisciplina(Disciplina disciplina) {
-		this.disciplina = disciplina;
+	public void setDisciplinas(List<Disciplina> disciplinas) {
+		this.disciplinas = disciplinas;
 	}
 	
-	public Disciplina getDisciplina() {
-		return disciplina;
+	public List<Disciplina> getDisciplinas() {
+		return disciplinas;
 	}
-	
 	
 	
 	public  Aluno () {
@@ -127,7 +127,7 @@ public class Aluno {
 	
 	/*Método que retorna a média do aluno*/
 	public double getMediaNota() {
-			return (disciplina.getNota1() + disciplina.getNota2() + disciplina.getNota3() + disciplina.getNota4() / 4 );
+			return 0 ;
 			
 					}
 	
@@ -156,20 +156,14 @@ public class Aluno {
 	
 	
 
+
+
 	@Override
 	public String toString() {
 		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
 				+ registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai
 				+ ", dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado="
-				+ serieMatriculado + ", disciplina=" + disciplina + ", getDisciplina()=" + getDisciplina()
-				+ ", getNome()=" + getNome() + ", getIdade()=" + getIdade() + ", getDataNascimento()="
-				+ getDataNascimento() + ", getRegistroGeral()=" + getRegistroGeral() + ", getNumeroCpf()="
-				+ getNumeroCpf() + ", getNomeMae()=" + getNomeMae() + ", getNomePai()=" + getNomePai()
-				+ ", getDataMatricula()=" + getDataMatricula() + ", getNomeEscola()=" + getNomeEscola()
-				+ ", getSerieMatriculado()=" + getSerieMatriculado() + ", getMediaNota()=" + getMediaNota()
-				+ ", getAlunoAprovado()=" + getAlunoAprovado() + ", getAlunoAprovado2()=" + getAlunoAprovado2()
-				+ ", hashCode()=" + hashCode() + ", getClass()=" + getClass() + ", toString()=" + super.toString()
-				+ "]";
+				+ serieMatriculado + "]";
 	}
 
 	@Override
