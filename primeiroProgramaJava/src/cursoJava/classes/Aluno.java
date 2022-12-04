@@ -150,12 +150,17 @@ public class Aluno {
 	/* Método 2 retorna String*/
 	public String getAlunoAprovado2() {
 		double media = this.getMediaNota();
-		if (media >= 70 ) {
+		if (media >= 50 ) {
+			if (media >=70) {
+			}else {
+				return "Aluno em recuperação";
+			}
 			return "Aluno está aprovado";
 		}else {
 			return"Aluno está reprovado";
 		}
 	}
+				
 
 
 

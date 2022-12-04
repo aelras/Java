@@ -14,7 +14,7 @@ public class PrimeiraClasseJava {
 		/* aluno1 é uma referencia para o objeto Aluno */
 
 		String nome = JOptionPane.showInputDialog("Qual é o nome do aluno? ");
-		String idade = JOptionPane.showInputDialog("Qual é a idade ? ");
+		/*String idade = JOptionPane.showInputDialog("Qual é a idade ? ");
 		String dataNascimento = JOptionPane.showInputDialog("Qual é a data de nascimento? ");
 		String RegistroGeral = JOptionPane.showInputDialog("Qual é o RG do aluno? ");
 		String Cpf = JOptionPane.showInputDialog("Qual é o Cpf do aluno? ");
@@ -22,12 +22,12 @@ public class PrimeiraClasseJava {
 		String NomePai = JOptionPane.showInputDialog("Qual é o nome do pai do aluno? ");
 		String DataMatricula = JOptionPane.showInputDialog("Qual é a data da matricula do aluno? ");
 		String SerieMatriculado = JOptionPane.showInputDialog("Qual é a série do aluno? ");
-		String NomeEscola = JOptionPane.showInputDialog("Qual é o nome da escola do aluno ?");
+		String NomeEscola = JOptionPane.showInputDialog("Qual é o nome da escola do aluno ?");*/
 
 		Aluno aluno1 = new Aluno();
 
 		aluno1.setNome(nome);
-		aluno1.setIdade(Integer.valueOf(idade));
+		/*aluno1.setIdade(Integer.valueOf(idade));
 		aluno1.setDataNascimento(dataNascimento);
 		aluno1.setRegistroGeral(RegistroGeral);
 		aluno1.setNumeroCpf(Cpf);
@@ -35,7 +35,7 @@ public class PrimeiraClasseJava {
 		aluno1.setNomePai(NomePai);
 		aluno1.setDataMatricula(DataMatricula);
 		aluno1.setSerieMatriculado(SerieMatriculado);
-		aluno1.setNomeEscola(NomeEscola);
+		aluno1.setNomeEscola(NomeEscola);*/
 		
 		for (int pos = 1; pos <= 4; pos++) {
 			
