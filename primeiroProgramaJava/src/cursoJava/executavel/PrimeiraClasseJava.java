@@ -38,6 +38,7 @@ public class PrimeiraClasseJava {
 		aluno1.setNomeEscola(NomeEscola);
 		
 		for (int pos = 1; pos <= 4; pos++) {
+			
 			String nomeDisciplina = JOptionPane.showInputDialog("Nome da disciplina "+pos+" ?");
 			String notaDisciplina = JOptionPane.showInputDialog("Nota da disciplina "+pos+" ?");
 			
@@ -47,14 +48,21 @@ public class PrimeiraClasseJava {
 			
 			aluno1.getDisciplinas().add(disciplina);
 		}
+		
+		int escolha = JOptionPane.showConfirmDialog(null, "Deseja remover alguma disciplina? ");
+		
+		if (escolha == 0) {
+			String disciplinaRemover = JOptionPane.showInputDialog("Qual a disciplina 1, 2, 3 ou 4 ? ");
+			aluno1.getDisciplinas().remove(Integer.valueOf(disciplinaRemover).intValue() - 1); 
+		}
 
-		System.out.println("Nome do aluno 1 é : " + aluno1.getNome());
+		/*System.out.println("Nome do aluno 1 é : " + aluno1.getNome());
 		System.out.println("Idade do aluno 1 é : " + aluno1.getIdade());
 		System.out.println("Data de nascimento do aluno 1 é : " + aluno1.getDataNascimento());
 		System.out.println("RG do aluno 1 é : " + aluno1.getRegistroGeral());
 		System.out.println("média da nota é = " + aluno1.getMediaNota());
 		System.out.println("Resultado = " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
-		System.out.println("Resultado 2 = " + aluno1.getAlunoAprovado2());
+		System.out.println("Resultado 2 = " + aluno1.getAlunoAprovado2());*/
 
 		System.out.println(aluno1.toString()); /* Descrição do objeto na memoria */
 		System.out.println("Média do aluno = " + aluno1.getMediaNota());
