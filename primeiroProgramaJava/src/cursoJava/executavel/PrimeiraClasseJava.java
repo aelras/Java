@@ -1,5 +1,8 @@
 package cursoJava.executavel;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.swing.JOptionPane;
 
 import cursoJava.classes.Aluno;
@@ -8,12 +11,17 @@ import cursoJava.classes.Disciplina;
 public class PrimeiraClasseJava {
 
 	/* Main é um método auto executavel em Java */
+	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
+		
+		List<Aluno> alunos = new ArrayList<Aluno>();
+		
+		for (int qtd = 1 ; qtd <= 2; qtd++) {
 
 		/* new Aluno() é uma instância (criação de objeto) */
 		/* aluno1 é uma referencia para o objeto Aluno */
 
-		String nome = JOptionPane.showInputDialog("Qual é o nome do aluno? ");
+		String nome = JOptionPane.showInputDialog("Qual é o nome do aluno? " + qtd + " ?");
 		/*String idade = JOptionPane.showInputDialog("Qual é a idade ? ");
 		String dataNascimento = JOptionPane.showInputDialog("Qual é a data de nascimento? ");
 		String RegistroGeral = JOptionPane.showInputDialog("Qual é o RG do aluno? ");
@@ -64,20 +72,18 @@ public class PrimeiraClasseJava {
 			}
 		}
 			
+		alunos.add(aluno1);
+	}
 		
-
-		/*System.out.println("Nome do aluno 1 é : " + aluno1.getNome());
-		System.out.println("Idade do aluno 1 é : " + aluno1.getIdade());
-		System.out.println("Data de nascimento do aluno 1 é : " + aluno1.getDataNascimento());
-		System.out.println("RG do aluno 1 é : " + aluno1.getRegistroGeral());
-		System.out.println("média da nota é = " + aluno1.getMediaNota());
-		System.out.println("Resultado = " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
-		System.out.println("Resultado 2 = " + aluno1.getAlunoAprovado2());*/
-
-		System.out.println(aluno1.toString()); /* Descrição do objeto na memoria */
-		System.out.println("Média do aluno = " + aluno1.getMediaNota());
-		System.out.println("resultado =  " + aluno1.getAlunoAprovado2());
-
+		for (Aluno aluno : alunos) {
+			
+			System.out.println(aluno.toString()); /* Descrição do objeto na memoria */
+			System.out.println("Média do aluno = " + aluno.getMediaNota());
+			System.out.println("resultado =  " + aluno.getAlunoAprovado2());
+			System.out.println("------------------------------------------------------------------------");
+		}
+	
+		
 	}
 
 }
